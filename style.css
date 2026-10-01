@@ -9,4 +9,16 @@ body {
 
 header {
     display: flex;
+    flex-direction: row;
+
+}
+
+.header-logo {
+    max-width: 356px;
+}
+
+.header-content-right ul{
+    display: flex;
+    list-style: none;
+    gap: 72px;
 }

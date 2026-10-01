@@ -1,15 +1,23 @@
 :root {
     --background-color: #211612;
+    --main-text-color: #f4f3ef;
 }
 
+@font-face {
+    font-family: Arsenica-Trial-Light;
+    src: url(fonts/ArsenicaTrial-Light.woff);
+}
 
 body {
     background-color: var(--background-color);
+    margin: 0;
 }
 
 header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding: 55px;
 
 }
 
@@ -17,8 +25,17 @@ header {
     max-width: 356px;
 }
 
-.header-content-right ul{
+.header-logo-text {
+    color: var(--main-text-color);
+}
+
+.header-nav ul{
     display: flex;
     list-style: none;
     gap: 72px;
+}
+
+.header-nav a {
+    color: var(--main-text-color);
+    font-family: Arsenica-Trial-Light;
 }

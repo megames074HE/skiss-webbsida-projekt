@@ -1,0 +1,12 @@
+:root {
+    --background-color: #211612;
+}
+
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    display: flex;
+}

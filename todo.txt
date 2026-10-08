@@ -1,0 +1,13 @@
+-- Rätt struktur
+
+-- Rätt storlek på text och bilder
+
+-- Rätta färger
+
+-- Rätta typsnit
+
+-- allt i variabler så det är lättare att ändra
+
+-- responsiv
+
+-- fixa stora hero bilden

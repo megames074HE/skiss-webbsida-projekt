@@ -1,17 +1,30 @@
 :root {
     --background-color: #211612;
-    --main-text-color: #f4f3ef;
+    --main-text-background-color: #f4f3ef;
+    --accent-color: #8565d6;
+
+    --text-font: Avenir-Medium;
+    --text-title-font: Avenir-Heavy;
 }
 
 @font-face {
-    font-family: Arsenica-Trial-Light;
-    src: url(fonts/ArsenicaTrial-Light\ \(2\).woff);
+    font-family: Avenir-Medium;
+    src: url(fonts/Avenir\ Medium.ttf);
+}
+
+
+@font-face {
+    font-family: Avenir-Heavy;
+    src: url(fonts/Avenir\ Heavy.ttf);
 }
 
 body {
     background-color: var(--background-color);
     margin: 0;
 }
+
+/* ALLT CSS FÖR HEADERN */
+
 
 header {
     display: flex;
@@ -21,13 +34,23 @@ header {
 
 }
 
-.header-logo {
-    max-width: 356px;
+.header-content-left {
+    display: flex;
+    flex-direction: column;
 }
 
-.header-logo-text {
-    color: var(--main-text-color);
-    font-family: Arsenica-Trial-Light, sans-serif;
+.header-logo {
+    max-width: 356px;
+    margin-bottom: 15px;
+}
+
+.header-events-logo {
+    max-width: 280px;
+}
+
+.header-content-right {
+    display: flex;
+    align-items: center;
 }
 
 .header-nav ul{
@@ -36,7 +59,105 @@ header {
     gap: 72px;
 }
 
-.header-nav a {
-    color: var(--main-text-color);
-    font-family: Arsenica-Trial-Light, sans-serif;
+.current-page-url {
+    text-decoration: underline;
+    font-size: 40px;
 }
+
+.header-nav a {
+    color: var(--main-text-background-color);
+    font-family: var(--text-font), sans-serif;
+    font-size: 24px;
+
+}
+
+.current-page-url {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-underline-offset: 9px;
+}
+
+.other-page-url {
+    text-decoration: none;
+}
+
+.other-page-url:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--accent-color);
+    text-underline-offset: 9px;
+
+}
+
+/* ALLT CSS FÖR HERON */
+
+
+.hero-background {
+    display: flex;
+    background-color: var(--main-text-background-color);
+
+}
+
+.hero-picture-container {
+    width: 1120px;
+    height: 754px;
+}
+
+.hero-picture-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-text-content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 75px;
+    margin-top: 52px;
+}
+
+
+.hero-upcoming-image {
+    max-width: 177px;
+}
+
+h1 {
+    font-family: var(--text-title-font), sans-serif;
+    font-size: 61px;
+    color: var(--background-color);
+}
+
+.hero-text-date dt {
+    font-family: var(--text-font), sans-serif;
+    font-size: 48px;
+    color: var(--background-color);
+}
+
+.hero-info-buttons {
+    
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-info-buttons a{
+    font-family: var(--text-title-font);
+    font-size: 36px;
+}
+
+.hero-more-info {
+    color: var(--background-color);
+    border-width: 50%;
+}
+
+.hero-buy-tickets {
+    
+}
+
+
+

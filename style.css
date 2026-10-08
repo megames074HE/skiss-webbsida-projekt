@@ -152,11 +152,12 @@ h1 {
 
 .hero-more-info {
     color: var(--background-color);
+    border: solid;
     border-width: 50%;
 }
 
 .hero-buy-tickets {
-    
+    border-width: 50%;
 }
 
 

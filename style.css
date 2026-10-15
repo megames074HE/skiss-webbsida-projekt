@@ -181,42 +181,80 @@ h1 {
 /* ALLT CSS FÖR articles */
 
 .articles-event-title {
+
     max-width: 250px;
+    padding-bottom: 48px;
+}
+
+main {
+    padding: 48px;
+}
+
+.articles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 55px;
 }
 
 .main-article {
     width: 100%;
     max-width: 566px;
-    
+
     display: flex;
     flex-direction: column;
     background-color: var(--main-text-background-color);
+    
 
 
 }
 
 .article-image {
     width: 100%;
-    height: 100%;
+    height: 352px;
+    max-height: 352px;
     object-fit: cover;
+
+}
+
+
+.article-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    
 }
 
 .article-text h2{
+    padding-left: 36px;
     color: var(--background-color);
     font-family: var(--text-title-font);
     font-size: 42px;
 }
 
+.article-text-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: 
+
+}
+
 .article-text p{
+    padding-left: 36px;
+
     color: var(--background-color);
     font-family: var(--text-title-font);
     font-size: 24px;
+    
 }
 
 .article-info-buttons {
     
     display: flex;
     flex-direction: row;
+    
 }
 
 

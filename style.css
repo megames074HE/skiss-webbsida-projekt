@@ -326,6 +326,12 @@ main {
     
 }
 
+.footer-left-list {
+    display: flex;
+    align-items: flex-start;
+    
+}
+
 .footer-left-list ul {
     list-style-type: none;
     padding: 0;
@@ -336,6 +342,7 @@ main {
     font-size: 24px;
     color: var(--background-color);
     text-decoration: none;
+    margin-right: 300px;
 }
 
 .footer-apps img {

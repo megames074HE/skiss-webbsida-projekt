@@ -98,7 +98,7 @@ header {
 }
 
 .hero-picture-container {
-    width: 1120px;
+    width: 60%;
     height: 754px;
 }
 
@@ -109,6 +109,7 @@ header {
 }
 
 .hero-main-content {
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -140,25 +141,111 @@ h1 {
 
 .hero-info-buttons {
     
-    align-self: flex-end;
     display: flex;
     flex-direction: row;
 }
 
-.hero-info-buttons a{
-    font-family: var(--text-title-font);
-    font-size: 36px;
-}
 
 .hero-more-info {
+    font-family: var(--text-title-font);
+    font-size: 36px;
     color: var(--background-color);
-    border: solid;
-    border-width: 50%;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 5px;
+    height: 128px;
+    max-height: 128px;
+    border: none;
+    background: none;
+    width: 50%;
+
 }
 
 .hero-buy-tickets {
-    border-width: 50%;
+    font-family: var(--text-title-font);
+    font-size: 36px;
+    color: var(--main-text-background-color);
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 5px;
+    height: 128px;
+    max-height: 128px;
+    border: none;
+    background-color: var(--accent-color);
+    width: 50%;
 }
 
 
 
+/* ALLT CSS FÖR articles */
+
+.articles-event-title {
+    max-width: 250px;
+}
+
+.main-article {
+    width: 100%;
+    max-width: 566px;
+    
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-text-background-color);
+
+
+}
+
+.article-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.article-text h2{
+    color: var(--background-color);
+    font-family: var(--text-title-font);
+    font-size: 42px;
+}
+
+.article-text p{
+    color: var(--background-color);
+    font-family: var(--text-title-font);
+    font-size: 24px;
+}
+
+.article-info-buttons {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+
+.article-more-info {
+    font-family: var(--text-title-font);
+    font-size: 36px;
+    color: var(--background-color);
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-color: var(--accent-color);
+    text-decoration-thickness: 5px;
+    height: 91px;
+    max-height: 91px;
+    border: none;
+    background: none;
+    width: 50%;
+
+}
+
+.article-buy-tickets {
+    font-family: var(--text-title-font);
+    font-size: 36px;
+    color: var(--main-text-background-color);
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 5px;
+    height: 91px;
+    max-height: 91px;
+    border: none;
+    background-color: var(--accent-color);
+    width: 50%;
+}
